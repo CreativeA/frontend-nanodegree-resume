@@ -1,77 +1,83 @@
-/*
+/* Base Variables */
 
-This file contains all of the code running in the background that makes resumeBuilder.js possible. We call these helper functions because they support your code in this course.
+var HTMLheaderName = '<h1 id="name" class="center-text">Hello. I\'m %data%</h1>';
+var HTMLheaderRole = '<h2 class="role">%data%</h3>';
 
-Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
+var HTMLcontactGeneric = '<li class="flex-item"><span class="blue-text">%contact%</span><span class="grey-text">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><span class="blue-text">mobile</span><span class="grey-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="blue-text">email</span><span class="grey-text">%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><span class="blue-text">twitter</span><span class="grey-text">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><span class="blue-text">github</span><span class="grey-text">%data%</span></li>';
+var HTMLblog = '<li class="flex-item"><span class="blue-text">blog</span><span class="grey-text">%data%</span></li>';
+var HTMLlocation = '<li class="flex-item"><span class="blue-text">location</span><span class="grey-text">%data%</span></li>';
 
-Cameron Pittman
-*/
+var HTMLbioStart = '<div class="left column col-6"></div><div class="right column col-6"></div>'
+var HTMLbioPic = '<img src="%data%" class="biopic"><div style="clear: both;"></div>';
+var HTMLwelcomeType = '<div id="tagline" class="center-content clear-fix"><div class="type-wrap"><div id="typed-strings"></div><span id="typed"></span></div></div>';
+var HTMLwelcomeMsg = '<p>%data%</p>';
+var HTMLgetStarted = '<a href="#workExperience" class="button">Explore My Resume ></a>';
 
-
-/*
-These are HTML strings. As part of the course, you'll be using JavaScript functions
-replace the %data% placeholder text you see in them.
-*/
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
-
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
-
-var HTMLbioPic = '<img src="%data%" class="biopic">';
-var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
-
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
+var HTMLskillsStart = '<div id="skillbox"><h3 id="skills-h3">Ice Breaker? Let\'s play!</br>The Skill Play Pen</h3><h5>Instructions: Drag & drop the skills to order them from cool to red hot >> Go, go, go!</h5><ul id="skills" class="flex-box"></ul></div>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
+var HTMLworkStart = '<article class="work-entry"><div class="left column col-2"></div><div class="right column col-10"></div></article>';
 var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkImage = '<img src="%url%">';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectStart = '<article class="project-entry column col-5"></article>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
+var HTMLschoolStart = '<article class="education-entry"></article>';
 var HTMLschoolName = '<a href="#">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
+var HTMLclassStart = '<article class="course-entry column col-4"><div class="card"><div class="front"></div><div class="back"></div></div></article>';
+var HTMLonlineClasses = '<h3 class="sub">Completed Course Library</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineURL = '<br><a href="http://%url%" target="_blank">%data%</a>';
 
-var internationalizeButton = '<button>Internationalize</button>';
+var HTMLquoteStart = '<div class="quote-entry"></div>';
+var HTMLquoteText = '<p>%data%</p>';
+var HTMLquoteAuthor = '<span>%data%</span>';
+var HTMLsoundCloud = '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/104735681&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>';
+
+var HTMLlanguageStart = '<div id="canvas-holder" class="column col-3"><canvas id="chart-area" width="100%" height="100%"></div><div id="canvas-holder2" class="column col-3"><canvas id="chart-area2" width="100%" height="100%"></div><div class="column col-6"><div class="wordpress column col-5"><img src="images/wordpress.png" width="90%"></div><div class="opencart column col-5"><img src="images/opencart.png" width="90%"></div><h4>The Question Remains: Which Platform? >>></h4></div>';
+var HTMLchartTitle = '<h4>%data%</h4>';
+
+var HTMLbackTop = '<a class="top" href="#top">Back to top ^</a>';
+
+var internationalizeButton = '<button>Not in the UK? Let\'s Go Global ></button>';
 var googleMap = '<div id="map"></div>';
 
+var HTMLfooter = '<a href="%url%" target="blank"><img src="%image%"></a><p class="white-text">Designed by %data% | Developed with Udacity</p>';
+
+
+/* Internationize Button */
 
 /*
-The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
 $(document).ready(function() {
   $('button').click(function() {
     var iName = inName() || function(){};
     $('#name').html(iName);  
   });
-});
-
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
+}); 
 */
+
+
+/* Click locations */
+
 clickLocations = [];
 
 function logClicks(x,y) {
@@ -85,9 +91,12 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
-});
+  /* everytime page is clicked we create these two new variables*/
+  var x = loc.pageX;
+  var y = loc.pageY;
 
+  logClicks(x,y);
+});
 
 
 /*
@@ -96,7 +105,6 @@ See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
 var map;    // declares a global map variable
-
 
 /*
 Start here! initializeMap() is called when page is loaded.
@@ -114,7 +122,6 @@ function initializeMap() {
   appended to #mapDiv in resumeBuilder.js. 
   */
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
-
 
   /*
   locationFinder() returns an array of every location string from the JSONs
@@ -233,16 +240,12 @@ function initializeMap() {
 
 }
 
-/*
-Uncomment the code below when you're ready to implement a Google Map!
-*/
+ //Calls the initializeMap() function when the page loads
+window.addEventListener('load', initializeMap);
 
-// Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
-
-// Vanilla JS way to listen for resizing of the window
-// and adjust map bounds
-//window.addEventListener('resize', function(e) {
+ //Vanilla JS way to listen for resizing of the window
+ //and adjust map bounds
+window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
-//  map.fitBounds(mapBounds);
-//});
+map.fitBounds(mapBounds);
+});
