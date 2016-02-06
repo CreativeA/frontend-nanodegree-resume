@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume:emuseR? It's about Anna</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/libs/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+  <script async src="js/libs/typed.js"></script>
+  <script async src="js/libs/Sortable.min.js"></script>
+  <script async src="js/libs/jquery.flip.min.js"></script>
+  <script src="js/libs/Chart.min.js"></script>
+  <script async src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <link href='https://fonts.googleapis.com/css?family=Bangers|Quicksand' rel='stylesheet'>
+</head>
+<body>
+  <div class="grid">
+    <div id="top" class="clear-fix">
+      <ul id="topContacts" class="flex-box"></ul>
+    </div>
+    <header class="center-content imageback flex-box">
+    </header>
+    <div style="clear: both;"></div>
+    <div id="navbar">
+      <img id="navicon" src="images/anna-udacity.jpg">
+      <nav>
+        <ul class="flex-box">
+          <li><a href="#topContacts">Say Hello</a></li>
+          <li><a href="#workExperience">Experience</a></li>
+          <li><a href="#quotes">Inspiration</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#mapDiv">Find Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section id="workExperience" class="blue">
+      <h2>Work Experience</h2>
+    </section>
+    <section id="quotes" class="imageback">
+      <h2>Inspiration: Words, Sounds, Ideas.</h2>
+    </section>
+    <section id="projects" class="white">
+      <h2>My Latest Projects</h2>
+    </section>
+    <section id="languages" class="blue">
+      <h2>Languages of Love</h2>
+    </section>
+    <section id="education" class="white">
+      <h2>We All Need Education</h2>
+    </section>
+    <section id="mapDiv" class="imageback">
+      <h2>Where I've Lived and Worked</h2>
+    </section>
+    <footer class="dark-blue">
+    </footer>
+  </div>
+  <script src="js/resumeBuilder.js"></script>
+  <script type="text/javascript">
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.backgroundColor = '#000';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.backgroundColor = '#000';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.backgroundColor = '#000';
+    }
+    if(document.getElementsByClassName('quote-entry').length === 0) {
+      document.getElementById('quotes').style.backgroundColor = '#000';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.backgroundColor = '#000';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = '#000';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.backgroundColor = '#000';
+    }
+  </script>
+</body>
+</html>
