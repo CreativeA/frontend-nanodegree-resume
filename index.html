@@ -5,16 +5,11 @@
   <title>Resume:emuseR? It's about Anna</title>
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Quicksand">
   <script src="js/libs/jQuery.js"></script>
   <script src="js/helper.js"></script>
-  <script src="js/libs/typed.js"></script>
-  <script src="js/libs/Sortable.min.js"></script>
-  <!-- Below the fold async -->
-  <script async src="js/libs/Chart.min.js"></script> 
-  <script async src="js/libs/jquery.flip.min.js"></script>
   <!-- third party async -->
   <script async src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Quicksand">
 </head>
 <body>
   <div class="grid">
@@ -25,10 +20,10 @@
     </header>
     <div style="clear: both;"></div>
     <div id="navbar">
-      <img id="navicon" src="images/anna-udacity.jpg">
       <nav>
         <ul class="flex-box">
-          <li><a href="#topContacts">Say Hello</a></li>
+          <li id="navicon"><img src="images/anna-udacity-icon.jpg"></li>
+          <li id="helloNav"><a href="#topContacts">Say Hello</a></li>
           <li id="workNav"><a href="#workExperience">Experience</a></li>
           <li id="inspirationNav"><a href="#quotes">Inspiration</a></li>
           <li id="projectsNav"><a href="#projects">Projects</a></li>
@@ -59,6 +54,10 @@
     <footer class="dark-blue">
     </footer>
   </div>
+  <script src="js/libs/typed.js"></script>
+  <script src="js/libs/Sortable.min.js"></script>
+  <script src="js/libs/Chart.min.js"></script> 
+  <script src="js/libs/jquery.flip.min.js"></script>
   <script src="js/resumeBuilder.js"></script>
   <script type="text/javascript">
     if(document.getElementsByClassName('flex-item').length === 0) {
