@@ -136,6 +136,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+  -webkit-flex-flow: row wrap; /* Safari 6.1+ */
 }
 
 .center-content {
@@ -318,8 +319,6 @@ header .right h5 {
 }
 
 #skillbox ul {
-    flex-direction: none;
-    flex-wrap: none;
 }
 
 #skills li{
