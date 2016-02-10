@@ -97,6 +97,16 @@ img {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+.subtitle {
+  color: #fff;
+  font-weight: normal;
+  padding: 0;
+  font-size: 21.5px;
+  border: none;
+  margin: 0.5em 0.5em 0;
 }
 
 /* Breadcrumbs */
@@ -253,6 +263,7 @@ header {
 
 header .left {
   float: left;
+  margin-top: 5vh;
 }
 
 .biopic {
@@ -285,24 +296,29 @@ header .right {
 }
 
 header .right h5 {
-  padding: 15px 10px 10px;
+  padding: 0.5em;
   font-size: 15px;
   color: #176D89;
 }
 
 #skillbox {
-  border: 1px dashed #096B98;
-  padding: 0px 20px 10px 10px;
-  width: 90%;
+  padding: 1em 2em 1em 1em;
+  width: 95%;
   background:rgba(255,255,255, 0.3);
 }
 
 #skills-h3 {
-  font-size: 26px;
+  font-size: 29px;
   line-height: 30px;
-  color: #176D89;
-  padding: 0 10px;
+  color: #5BB7CC;
+  padding: 0;
+  text-align: right;
+  font-weight: normal;
   font-family: 'Bangers', cursive;
+}
+
+#skillbox img {
+  float: right;
 }
 
 #skillbox ul {
@@ -321,6 +337,15 @@ header .right h5 {
 #skills li:nth-child(4)  { background-color: #609491; }
 #skills li:nth-child(5)  { background-color: #38A7BF; } 
 
+#skills li::after  { 
+  text-align: center;
+  vertical-align: bottom; 
+  margin-top: 3px;
+} 
+
+#skills li:nth-child(1)::after  { content: url('../images/chilli-pepper.png'); } 
+#skills li:nth-child(5)::after  { content: url('../images/sunglasses.png'); } 
+
 /* Navigation */
 
 #navbar {
@@ -330,7 +355,6 @@ header .right h5 {
   bottom: 85px;
   width: 100%;
   z-index: 1001;
-  padding: 0 5%;
   overflow: visible;
   border-top: 3px solid #fff;
   transition: ease-in-out, width .35s ease-in-out;
@@ -345,17 +369,7 @@ header .right h5 {
   visibility: visible;
 }
 
-#navicon {
-  width: 120px;
-  border-radius: 50%;
-  padding: 0;
-  position: absolute;
-  margin-top: -12px;
-  transition: ease-in-out, width .35s ease-in-out;
-}
-
 nav {
-  margin-left: 5%;
   padding: 0 7%;
 }
 
@@ -379,6 +393,8 @@ nav ul li a {
     line-height: 2em;
     text-decoration: none;
     padding: 0em 1.25em 0.8em;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 nav ul li ul {
@@ -401,6 +417,23 @@ nav li:hover > ul {
     position: absolute;
     display : block;
 }
+
+nav #navicon {
+  margin-right: 1em;
+}
+
+nav #navicon:hover {
+  background: none;
+}
+
+
+nav #navicon img {
+  height: 90%;
+  width: 100%;
+  margin-top: 3px;
+  border-radius: 50%;
+}
+
 
 /*Tagline Bar */
 
@@ -596,6 +629,7 @@ iframe {
 }
 
 /* Footer */
+
 footer {
   height: 230px;
   padding: 10px 5%;
@@ -609,28 +643,32 @@ footer p {
 /* Media Queries */
 
 @media only screen and (max-width: 1040px) {
+
   h1 {
     font-size: 37px;
     line-height: 39px;
-}
+  }
+
   .button { 
     font-size: 15px;
     width: 80%;
     margin-bottom: 60px;
-}
+  }
+
   header {
     height: 100%;
   }
+
   header .left .role {
     padding: 13px 0 0;
     font-size: 19px;
     width: 90%;
   }
+
   #skillbox {
-    padding: 10px 20px 10px 10px;
-    width: 80%;
-    margin: 0 0 0 5%;
-    text-align: center;
+    padding: 12% 3%;
+    width: 94%;
+    float: right;
   }
 
   #skills-h3 {
@@ -642,6 +680,7 @@ footer p {
     width: 100%;
     padding: 5px 5px 5px 10px;
   }
+
   #navicon {
     margin-top: -5px;
   }
@@ -650,71 +689,105 @@ footer p {
     font-size: 15px;
      padding: 0em 0.7em 0.8em;
   }
+
   #tagline {
     padding: 2em 3em;
   }
+
   #tagline #typed {
     font-size: 17px;
   }
+
   .project-entry {
     width: 90%;
   }
+
   #languages h4 {
     font-size: 12px;
   }
+
   footer {
     height: 18em;
   }
+
+}
+
+@media only screen and (max-width:860px) {
+
+  nav ul li a {
+    font-size: 13px;
+  }
+
 }
 
 @media only screen and (max-width:750px) {
+
   img {
     display: inline-block;
   }
+
   .button {
     width: 60%;
     margin: 4% 20%;
   }
+
   .flex-box {
     justify-content: center;
   }
+
   .col-3 {
     width: 42%;
   }
+
   .col-4 {
     width: 90%;
     padding: 0 5%;
   }
+
   .col-5 {
     width: 42%;
   }
+
   .col-6 {
     width: 100%;
   }
+
   .col-10{
      width: 90%;
     padding: 0 5%;
   }
-  #skillbox {
-    float: none;
-    margin: 5% 6%;
-    width: 80%;
-  }
+
   header {
     height: 100%;
   }
+
   header .left {
     text-align: center;
   }
+
   .biopic {
     width: 40%;
-    margin: 4% 30%;
+    margin: 0 30% 5%;
   }
+
+  #skillbox {
+    float: none;
+    margin: 5% 6%;
+    padding: 3%;
+    width: 80%;
+  }
+
+  #skills-h3 {
+    text-align: center;
+    padding: 0;
+  }
+
   #navbar {
     position: fixed;
     bottom: 5em;
     padding: 0;
   }
+
   #navicon {
     display: none;
   }
@@ -740,89 +813,126 @@ footer p {
       font-size: 14px;
       padding: 0em 0.7em 0.8em;
   }
+
   #tagline {
     padding: 2em 3.5em 2em 1.5em;
+    width: 90% !important;
   }
+
   #tagline #typed {
     font-size: 17px;
   }
+
  .course-entry, .work-entry {
     margin-bottom: 20px;
   }
+
   .work-entry {
     padding: 0;
   }
+
   .work-entry img {
     display: none;
   }
+
   .project-entry {
     margin-bottom: 40px;
     width: 90%;
   }
+
   .course-entry:last-of-type, .work-entry:last-of-type, .project-entry:last-of-type {
     margin-bottom: 0px;
   }
+
 }
 
+/* Enhance user experience if viewport height gets too small */
 @media only screen and (max-height: 480px) {
+
   #tagline {
     position: relative;
     min-height: 100px;
-    margin: 2em 8%;
-    padding: 30px 20px 30px ;
-    width: 75%;
-    background: #64B6CA;
+    padding: 5% !important;
+    width: 80%;
+    background: #fff;
+    margin: 0 4% 5% 0;
   }
+
   #tagline::before {
-    content: "Introduction: ";
-    color: #fff;
+    content: "Introduction:";
+    color: #64B6C8;
   } 
+
+  #tagline .type-wrap {
+    text-align: left;
+    margin-top: 0.5em;
+    line-height: 1.5em;
+  }
+
   #tagline #typed {
     font-size: 18px;
   }
+
+  #navbar {
+    bottom: 0;
+  }
+
 }
 
+
 @media only screen and (max-width: 550px) {
+
   img {
     width: 100%;
   }
+
   .button {
     margin-left: 7%;
   }
+
   .col-3 {
     width: 90%;
     padding: 0 5%;
   }
+
   .col-4 {
     width: 90%;
     padding: 0 5%;
   }
+
   .col-5{
     width: 90%;
     padding: 0 5%;
   }
+
   .col-6 {
     width: 100%;
     display: block;
   }
+
   .top {
     font-size: 12px;
     padding: 10px;
   }
+
   header .left .button {
     width: 70%;
     font-size: 14px;
   }
+
   header .left .role {
     width: 100%;
   }
+
   .biopic {
     width: 70%;
     margin: 4% 22%;
   }
+
   header .right h5 {
     color: white;
   }
+
   #skillbox {
     border: 1px solid white;
     padding: 10px 20px 10px 10px;
@@ -842,51 +952,64 @@ footer p {
     width: 100%;
     padding: 5px 5px 5px 10px;
   }
+
   #tagline {
     position: relative;
     min-height: 100px;
     margin: 2em 8%;
     padding: 30px 20px 30px ;
-    width: 75%;
+    width: 75% !important;
     background: #64B6CA;
   }
+
   #tagline::before {
     content: "Introduction: ";
     color: #fff;
-  } 
+  }
+
   #tagline #typed {
     font-size: 18px;
   }
+
   #navbar {
     bottom: 0;
   }
+
   .location-text {
     float: none;
     margin-top: 30px;
   }
+
   .education-entry {
     margin: 10px 0 ;
     padding-bottom: 35px;
     border-bottom: 1px dashed #ccc;
   }
+
   .wordpress, .opencart {
     width: 75%;
     margin-left: 6%;
   }
+
   footer {
     height: 12em;
   }
+
   footer img {
     max-width: 100px;
   }
+
 }
 
 @media only screen and (max-width: 460px) {
+
   .biopic {
       width: 70%;
       margin: 4% 15%;
-    }
+  }
+
   footer {
     height: 14em;
   }
+
 }
