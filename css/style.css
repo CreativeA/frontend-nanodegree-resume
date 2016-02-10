@@ -293,6 +293,7 @@ header .left .button {
 
 header .right {
   float: right;
+  margin-top: 5vh;
 }
 
 header .right h5 {
@@ -302,19 +303,14 @@ header .right h5 {
 }
 
 #skillbox {
-  padding: 1em 2em 1em 1em;
+  padding: 1.2em 2em 1.2em 1em;
   width: 95%;
   background:rgba(255,255,255, 0.3);
+  text-align: center;
 }
 
 #skills-h3 {
-  font-size: 29px;
-  line-height: 30px;
-  color: #5BB7CC;
-  padding: 0;
-  text-align: right;
-  font-weight: normal;
-  font-family: 'Bangers', cursive;
+ display: none;
 }
 
 #skillbox img {
@@ -666,8 +662,8 @@ footer p {
   }
 
   #skillbox {
-    padding: 12% 3%;
-    width: 94%;
+    height: 100%;
+    width: 90%;
     float: right;
   }
 
@@ -759,6 +755,7 @@ footer p {
 
   header {
     height: 100%;
+    overflow: hidden;
   }
 
   header .left {
@@ -877,6 +874,10 @@ footer p {
     bottom: 0;
   }
 
+  #skillbox {
+    height: 100%;
+  }
+
 }
 
 
@@ -927,30 +928,6 @@ footer p {
   .biopic {
     width: 70%;
     margin: 4% 22%;
-  }
-
-  header .right h5 {
-    color: white;
-  }
-
-  #skillbox {
-    border: 1px solid white;
-    padding: 10px 20px 10px 10px;
-    width: 80%;
-    margin: 10% 5%;
-    text-align: center;
-    background: none;
-  }
-
-  #skills-h3 {
-    color: #64B6CA;
-  }
-
-  #skills li{
-    text-align: center;
-    font-size: 12px;
-    width: 100%;
-    padding: 5px 5px 5px 10px;
   }
 
   #tagline {
