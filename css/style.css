@@ -318,6 +318,8 @@ header .right h5 {
 }
 
 #skillbox ul {
+    flex-direction: none;
+    flex-wrap: none;
 }
 
 #skills li{
