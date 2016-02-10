@@ -4,15 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume:emuseR? It's about Anna</title>
   <link rel="shortcut icon" href="images/favicon.ico">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/libs/jQuery.js"></script>
   <script src="js/helper.js"></script>
   <script src="js/libs/typed.js"></script>
   <script src="js/libs/Sortable.min.js"></script>
-  <script src="js/libs/jquery.flip.min.js"></script>
-  <script src="js/libs/Chart.min.js"></script>
+  <!-- Below the fold async -->
+  <script async src="js/libs/Chart.min.js"></script> 
+  <script async src="js/libs/jquery.flip.min.js"></script>
+  <!-- third party async -->
   <script async src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-  <link href='https://fonts.googleapis.com/css?family=Bangers|Quicksand' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Quicksand">
 </head>
 <body>
   <div class="grid">
@@ -27,12 +29,12 @@
       <nav>
         <ul class="flex-box">
           <li><a href="#topContacts">Say Hello</a></li>
-          <li><a href="#workExperience">Experience</a></li>
-          <li><a href="#quotes">Inspiration</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#mapDiv">Find Me</a></li>
+          <li id="workNav"><a href="#workExperience">Experience</a></li>
+          <li id="inspirationNav"><a href="#quotes">Inspiration</a></li>
+          <li id="projectsNav"><a href="#projects">Projects</a></li>
+          <li id="languagesNav"><a href="#languages">Languages</a></li>
+          <li id="educationNav"><a href="#education">Education</a></li>
+          <li id="mapNav"><a href="#mapDiv">Find Me</a></li>
         </ul>
       </nav>
     </div>
@@ -64,21 +66,32 @@
     }
     if(document.getElementsByTagName('h1').length === 0) {
       document.getElementById('header').style.backgroundColor = '#000';
-    }
+    }  
+    /* Edit to make sure nav elements do not display if section has no content */
     if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.backgroundColor = '#000';
+      document.getElementById('workExperience').style.display = 'none';
+      document.getElementById('workNav').style.display = 'none';
     }
     if(document.getElementsByClassName('quote-entry').length === 0) {
-      document.getElementById('quotes').style.backgroundColor = '#000';
+      document.getElementById('quotes').style.display = 'none';
+      document.getElementById('inspirationNav').style.display = 'none';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.backgroundColor = '#000';
+      document.getElementById('projects').style.display = 'none';
+      document.getElementById('projectsNav').style.display = 'none';
     }
+    /* TODO This control not working */
+    //if(document.getElementById("canvas-area") == null) {
+    //  document.getElementById('languages').style.display = 'none';
+    //  document.getElementById('languagesNav').style.display = 'none';
+    //}
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.backgroundColor = '#000';
+      document.getElementById('education').style.display = 'none';
+      document.getElementById('educationNav').style.display = 'none';
     }
     if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.backgroundColor = '#000';
+      document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('mapNav').style.display = 'none';
     }
   </script>
 </body>

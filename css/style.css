@@ -764,6 +764,24 @@ footer p {
   }
 }
 
+@media only screen and (max-height: 480px) {
+  #tagline {
+    position: relative;
+    min-height: 100px;
+    margin: 2em 8%;
+    padding: 30px 20px 30px ;
+    width: 75%;
+    background: #64B6CA;
+  }
+  #tagline::before {
+    content: "Introduction: ";
+    color: #fff;
+  } 
+  #tagline #typed {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   img {
     width: 100%;
