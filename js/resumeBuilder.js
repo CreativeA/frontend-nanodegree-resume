@@ -532,7 +532,7 @@ displayContent();
 /* Sticky Header */
 function stickyHeader() {
 
-	var mainbottom = $('header').offset().top + $('header').height();
+	var mainbottom = $('header').offset().top + $('footer').height();
 	  	// on scroll, 
 	  	$(window).on('scroll',function(){
 	      	// we round here to reduce a little workload

@@ -17,7 +17,7 @@ var HTMLwelcomeType = '<div id="tagline" class="center-content clear-fix"><div c
 var HTMLwelcomeMsg = '<p>%data%</p>';
 var HTMLgetStarted = '<a href="#workExperience" class="button">Explore My Resume ></a>';
 
-var HTMLskillsStart = '<div id="skillbox"><h3 id="skills-h3">Ice Breaker? Let\'s play!</br>The Skill Play Pen</h3><h5>Instructions: Drag & drop the skills to order them from cool to red hot >> Go, go, go!</h5><ul id="skills" class="flex-box"></ul></div>';
+var HTMLskillsStart = '<h3 id="skills-h3">Ice Breaker? Let\'s play!</h3><div id="skillbox"><h3 class="subtitle">The Skill Play Pen</h3><h5>Instructions: Drag & drop the skills to order them from cool to red hot >> Go, go, go!</h5><ul id="skills" class="flex-box"></ul></div>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<article class="work-entry"><div class="left column col-2"></div><div class="right column col-10"></div></article>';
