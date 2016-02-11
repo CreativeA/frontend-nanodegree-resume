@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Quicksand">
-  <script src="js/libs/jQuery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/helper.js"></script>
   <!-- third party async -->
   <script async src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
@@ -20,18 +20,6 @@
     </header>
     <div style="clear: both;"></div>
     <div id="navbar">
-      <nav>
-        <ul class="flex-box">
-          <li id="navicon"><img src="images/anna-udacity-icon.jpg"></li>
-          <li id="helloNav"><a href="#topContacts">Say Hello</a></li>
-          <li id="workNav"><a href="#workExperience">Experience</a></li>
-          <li id="inspirationNav"><a href="#quotes">Inspiration</a></li>
-          <li id="projectsNav"><a href="#projects">Projects</a></li>
-          <li id="languagesNav"><a href="#languages">Languages</a></li>
-          <li id="educationNav"><a href="#education">Education</a></li>
-          <li id="mapNav"><a href="#mapDiv">Find Me</a></li>
-        </ul>
-      </nav>
     </div>
     <section id="workExperience" class="blue">
       <h2>Work Experience</h2>
@@ -66,31 +54,20 @@
     if(document.getElementsByTagName('h1').length === 0) {
       document.getElementById('header').style.backgroundColor = '#000';
     }  
-    /* Edit to make sure nav elements do not display if section has no content */
     if(document.getElementsByClassName('work-entry').length === 0) {
       document.getElementById('workExperience').style.display = 'none';
-      document.getElementById('workNav').style.display = 'none';
     }
     if(document.getElementsByClassName('quote-entry').length === 0) {
       document.getElementById('quotes').style.display = 'none';
-      document.getElementById('inspirationNav').style.display = 'none';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
       document.getElementById('projects').style.display = 'none';
-      document.getElementById('projectsNav').style.display = 'none';
     }
-    /* TODO This control not working */
-    //if(document.getElementById("canvas-area") == null) {
-    //  document.getElementById('languages').style.display = 'none';
-    //  document.getElementById('languagesNav').style.display = 'none';
-    //}
     if(document.getElementsByClassName('education-entry').length === 0) {
       document.getElementById('education').style.display = 'none';
-      document.getElementById('educationNav').style.display = 'none';
     }
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
-      document.getElementById('mapNav').style.display = 'none';
     }
   </script>
 </body>

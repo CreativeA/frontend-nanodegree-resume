@@ -529,7 +529,27 @@ function displayContent() {
 displayContent();
 
 
+/* Build the nav menu */
+
+function buildNav() {
+
+	$("#navbar").append(navStart);
+	$("nav .flex-box").append(biopicNav);
+	$("nav .flex-box").append(bioNav);
+	$("nav .flex-box").append(workNav);
+	$("nav .flex-box").append(inspirationNav);
+	$("nav .flex-box").append(projectsNav);
+	$("nav .flex-box").append(languagesNav);
+	$("nav .flex-box").append(educationNav);
+	$("nav .flex-box").append(mapNav);
+
+}
+
+buildNav();
+
+
 /* Sticky Header */
+
 function stickyHeader() {
 
 	var mainbottom = $('header').offset().top + $('footer').height();
