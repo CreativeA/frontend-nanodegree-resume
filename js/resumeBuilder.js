@@ -329,7 +329,7 @@ function languages() {
 			segmentShowStroke : false
 		});
 
-	};
+	}
 
 	function chart2() {
 
@@ -360,12 +360,12 @@ function languages() {
 			segmentShowStroke : false
 		});
 
-	};
+	}
 
 	chart1();
 	chart2();
 
-};
+}
 
 
 /* Education Object / Section */
@@ -524,7 +524,7 @@ function displayContent() {
 	languages();
 	footer.display();
 
-};
+}
 
 displayContent();
 
@@ -566,7 +566,7 @@ function stickyHeader() {
 	      	}
 	});
 
-};
+}
 
 stickyHeader();
 
@@ -591,6 +591,6 @@ function smoothScroll() {
 
 	});
 
-};
+}
 
 smoothScroll();

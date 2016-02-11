@@ -107,6 +107,7 @@ $(document).click(function(loc) {
   var y = loc.pageY;
 
   logClicks(x,y);
+
 });
 
 
@@ -258,5 +259,6 @@ window.addEventListener('load', initializeMap);
  //and adjust map bounds
 window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
-map.fitBounds(mapBounds);
+  map.fitBounds(mapBounds);
+
 });
