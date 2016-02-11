@@ -500,6 +500,7 @@ var education = {
 	}
 };
 
+
 var footer = {
 
 	'name': 'Anna Ewing',
@@ -514,9 +515,11 @@ var footer = {
 		var addLink = updateImage.replace('%url%', footer.imagelink);
 		var formattedFooter = addLink.replace('%data%', footer.name);
 		$("footer").append(formattedFooter);
+
 	}
 
 };
+
 
 /* Add the Internationalize Button NOT USING */
 

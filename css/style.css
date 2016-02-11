@@ -85,6 +85,7 @@ img {
   border-radius: 999em;
   width: 80%;
 }
+
 .button:hover {
   border: 1px solid #096B98;
   color: #096B98;
@@ -152,55 +153,55 @@ footer {
 }
 
 .column {
-    display: inline-block;
+  display: inline-block;
 }
 
 .col-1 {
-    width: 8.33%;
+  width: 8.33%;
 }
 
 .col-2 {
-    width: 16.66%;
+  width: 16.66%;
 }
 
 .col-3 {
-    width: 18%;
+  width: 18%;
 }
 
 .col-4 {
-    width: 22%;
+  width: 22%;
 }
 
 .col-5 {
-    width: 40%;
+  width: 40%;
 }
 
 .col-6 {
-    width: 50%;
+  width: 50%;
 }
 
 .col-7 {
-    width: 58.33%;
+  width: 58.33%;
 }
 
 .col-8 {
-    width: 66.66%;
+  width: 66.66%;
 }
 
 .col-9 {
-    width: 75%;
+  width: 75%;
 }
 
 .col-10 {
-    width: 83.33%;
+  width: 83.33%;
 }
 
 .col-11 {
-    width: 91.66%;
+  width: 91.66%;
 }
 
 .col-12 {
-    width: 100%;
+  width: 100%;
 }
 
 /* Sections */
@@ -330,11 +331,11 @@ header .right h5 {
   background:rgba(255,255,255, 0.4);
 }
 
-#skills li:nth-child(1)  { background-color: #B5222D; }
-#skills li:nth-child(2)  { background-color: #CE1616; }
-#skills li:nth-child(3)  { background-color: #D4953C; }
-#skills li:nth-child(4)  { background-color: #609491; }
-#skills li:nth-child(5)  { background-color: #38A7BF; }
+#skills li:nth-child(1) { background-color: #B5222D; }
+#skills li:nth-child(2) { background-color: #CE1616; }
+#skills li:nth-child(3) { background-color: #D4953C; }
+#skills li:nth-child(4) { background-color: #609491; }
+#skills li:nth-child(5) { background-color: #38A7BF; }
 
 #skills li::after  {
   text-align: center;
@@ -342,8 +343,8 @@ header .right h5 {
   margin-top: 3px;
 }
 
-#skills li:nth-child(1)::after  { content: url('../images/chilli-pepper.png'); }
-#skills li:nth-child(5)::after  { content: url('../images/sunglasses.png'); }
+#skills li:nth-child(1)::after { content: url('../images/chilli-pepper.png'); }
+#skills li:nth-child(5)::after { content: url('../images/sunglasses.png'); }
 
 /* Navigation */
 
@@ -373,48 +374,44 @@ nav {
 }
 
 nav ul{
-    margin: 0;
-    padding: 0;
-    float: right;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 100%;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
 }
 
 nav ul li a {
-    color: #fff;
-    line-height: 2em;
-    text-decoration: none;
-    padding: 0em 1.25em 0.8em;
-    display: inline-block;
-    vertical-align: bottom;
+  color: #fff;
+  line-height: 2em;
+  text-decoration: none;
+  padding: 0em 1.25em 0.8em;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 nav ul li ul {
-    display: none;
-    list-style: none;
-    background: #e68513;
-    min-width: 100%;
-    white-space: nowrap;
-}
-
-nav ul > li a:before {
-
+  display: none;
+  list-style: none;
+  background: #e68513;
+  min-width: 100%;
+  white-space: nowrap;
 }
 
 nav li:hover {
-    background-color: #5BB7CC;
+  background-color: #5BB7CC;
 }
 
 nav li:hover > ul {
-    position: absolute;
-    display : block;
+  position: absolute;
+  display : block;
 }
 
 nav #navicon {
@@ -848,6 +845,7 @@ footer p {
 }
 
 /* Enhance user experience if viewport height gets too small */
+
 @media only screen and (max-height: 480px) {
 
   #tagline {
@@ -884,7 +882,6 @@ footer p {
   }
 
 }
-
 
 @media only screen and (max-width: 550px) {
 
