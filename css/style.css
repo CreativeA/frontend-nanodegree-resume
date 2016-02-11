@@ -137,7 +137,7 @@ img {
   padding: 10px;
   /* Browser Compatibility */
   display: -webkit-flex;
-  -webkit-flex-flow: row wrap; 
+  -webkit-flex-flow: row wrap;
   -webkit-justify-content: space-around;
 }
 
@@ -145,8 +145,8 @@ img {
   padding: 2.5% 5%;
 }
 
-header, 
-section, 
+header,
+section,
 footer {
   padding: 25px 0px 40px;
 }
@@ -334,16 +334,16 @@ header .right h5 {
 #skills li:nth-child(2)  { background-color: #CE1616; }
 #skills li:nth-child(3)  { background-color: #D4953C; }
 #skills li:nth-child(4)  { background-color: #609491; }
-#skills li:nth-child(5)  { background-color: #38A7BF; } 
+#skills li:nth-child(5)  { background-color: #38A7BF; }
 
-#skills li::after  { 
+#skills li::after  {
   text-align: center;
-  vertical-align: bottom; 
+  vertical-align: bottom;
   margin-top: 3px;
-} 
+}
 
-#skills li:nth-child(1)::after  { content: url('../images/chilli-pepper.png'); } 
-#skills li:nth-child(5)::after  { content: url('../images/sunglasses.png'); } 
+#skills li:nth-child(1)::after  { content: url('../images/chilli-pepper.png'); }
+#skills li:nth-child(5)::after  { content: url('../images/sunglasses.png'); }
 
 /* Navigation */
 
@@ -648,7 +648,7 @@ footer p {
     line-height: 39px;
   }
 
-  .button { 
+  .button {
     font-size: 15px;
     width: 80%;
     margin-bottom: 60px;
@@ -862,7 +862,7 @@ footer p {
   #tagline::before {
     content: "Introduction:";
     color: #64B6C8;
-  } 
+  }
 
   #tagline .type-wrap {
     text-align: left;

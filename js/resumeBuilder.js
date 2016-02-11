@@ -5,7 +5,7 @@ var bio = {
 ,
 	"role": "Young(ish) Front-End Web&nbspDev Jedi"
 ,
-	"contacts": 
+	"contacts":
 		{
 			"mobile": "+44 (0)7000 000 000",
 			"email": "hello@creative-asset.co.uk",
@@ -21,11 +21,11 @@ var bio = {
 			"Want to talk about your project? Just say hello@creative-asset.co.uk."
 		]
 ,
-	"skills": 
-		[ 
-			"Navigating a floor full of Lego", 
+	"skills":
+		[
+			"Navigating a floor full of Lego",
 			"OpenSource dev & design",
-			"Outside-the-box thinking", 
+			"Outside-the-box thinking",
 			"Ignoring a world of pouting selfies",
 			"Deep-space OpenCart exploration"
 		]
@@ -61,12 +61,12 @@ var bio = {
 		$("#topContacts").append(formattedTwitter);
 
 		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-		$("#topContacts").append(formattedLocation);	
+		$("#topContacts").append(formattedLocation);
 
 		/* Welcome Message */
 
 		if(bio.welcomeMessage.length > 0) {
-		
+
 			$("header .left").append(HTMLwelcomeType);
 
 			var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage[0]);
@@ -128,7 +128,7 @@ var bio = {
 		};
 
 	}
-}; 
+};
 
 /* Work Object / Section */
 
@@ -138,7 +138,7 @@ var work = {
 			"employer": "Creative Asset",
 			"title": "Owner / Entrepreneur",
 			"location": "Nottingham, UK",
-			"dates": "2010 - Current",	
+			"dates": "2010 - Current",
 			"description": "Anna designs things for SME businesses; things that strive to bring them commercial success - marketing materials, websites, etc. She is also a spreadsheet nerd, lover of efficiency and hater of unnecessary jargon. Her business helps her clients to organise their internal business processses, improve their outbound marketing and to take a broad view in order to understand and enhance their customer\'s journey. Ultimately she helps them to conceptualise how to move their business forward and to identity their goals - both short and long term.",
 			"image": "images/calogo.png"
 		}
@@ -147,9 +147,9 @@ var work = {
 			"employer": "A boy called Charlie",
 			"title": "Maker / Mentor",
 			"location": "Rotherham, UK",
-			"dates": "2008 - Current",	
+			"dates": "2008 - Current",
 			"description": "Once upon a time Anna was a not-so-care-free 19 year old. Then she had her son; a boy called Charlie. Together Anna and Charlie grew and learned about the world. And it was so that Anna learned how to become more care-free and to really appreciate the most important things in life. Along their journey together Charlie was blessed with two younger siblings and they too now look to him for inspiration on a daily basis. Collectively Anna and her eldest son learn-from and teach each other... and they are currently collaborating on a Raspberry Pi related project. ",
-			"image": "images/raspberrypi.png"		
+			"image": "images/raspberrypi.png"
 		}
 	]
 ,
@@ -229,21 +229,21 @@ var projects = {
 			"title": "A life more ordinary",
 			"dates": "Jan 2015 - Current",
 			"description": "Inspired by her life experiences and a diagnosis of Fibromyalgia, Anna is working on developing a platform that will bring more work opportunities to people who don\'t want to see their life continually defined by illness, disability or disadvantaged circumstances.",
-			"images": 
+			"images":
 				[
 					"images/banksy1.jpg",
 					"images/banksy3.jpg",
-				]	
+				]
 		}
 	,
 		{
 			"title": "Continual professional development",
 			"dates": "Ongoing",
 			"description": "The never ending action of taking confident strides forward, without complacency and without holding the assumption that you ever really have the answer. Anna always asks questions and isn\'t afraid to say \" I don\'t know\", \"I'm sorry\" or \"I was wrong.\"",
-			"images": 
+			"images":
 				[
 					"images/banksy2.jpg"
-				]	
+				]
 		}
 	]
 ,
@@ -281,7 +281,7 @@ function languages() {
 
 	$("#languages").append(HTMLlanguageStart);
 	$("#languages").prepend(HTMLbackTop);
-	 
+
 	function chart1() {
 
 		var chartTitle = "To Code >>>";
@@ -376,7 +376,7 @@ var education = {
 			"name": "Parenthood",
 			"location": "Nottingham, UK",
 			"degree": "2:1 Male to Female Minion Ratio",
-			"majors": 
+			"majors":
 				[
 					"Teaching",
 					" Leading"
@@ -390,7 +390,7 @@ var education = {
 			"name": "School of Life",
 			"location": "Sheffield, UK",
 			"degree": "Find your own path",
-			"majors": 
+			"majors":
 				[
 					"Observing",
 					" Learning"
@@ -405,21 +405,21 @@ var education = {
 		{
 			"title": "Front End Web Development Nanodegree",
 			"school": "Udacity </br><span>(you might know them!)</span>",
-			"dates": "2015 - Current",	
+			"dates": "2015 - Current",
 			"url": "www.udacity.com"
 		}
 	,
 		{
 			"title": "WordPress Development",
 			"school": "Self-Taught </br><span>(via Treehouse, YouTube, Lynda, Udemy etc.)</span>",
-			"dates": "2012 - Current",	
+			"dates": "2012 - Current",
 			"url": "www.wordpress.com"
 		}
 	,
 		{
 			"title": "OpenCart Development",
 			"school": "Self-Taught </br><span>(via Google, StackOverflow, Forums, Blogs etc.)</span>",
-			"dates": "2011 - Current",	
+			"dates": "2011 - Current",
 			"url": "www.opencart.com"
 		}
 	]
@@ -450,7 +450,7 @@ var education = {
 
 		for (course in education.onlineCourses) {
 			$("#education").append(HTMLclassStart);
-			
+
 			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
 			var formattedTitleSchool = formattedTitle + formattedSchool;
@@ -491,10 +491,10 @@ var footer = {
 
 /* Add the Internationalize Button NOT USING */
 
-/* 
+/*
 inName = function() {
 
-	var names = bio.name.split(" "); 
+	var names = bio.name.split(" ");
 	//seperate the first and second names
 	names[1] = names[1].toUpperCase();
 	//get the second name and put it in uppercase
@@ -504,7 +504,7 @@ inName = function() {
 	//join the two strings together
 	return finalName;
 	//return the new value
-}; 
+};
 */
 
 
@@ -553,18 +553,18 @@ buildNav();
 function stickyHeader() {
 
 	var mainbottom = $('header').offset().top + $('footer').height();
-	  	// on scroll, 
+	  	// on scroll,
 	  	$(window).on('scroll',function(){
 	      	// we round here to reduce a little workload
 	      	var stop = Math.round($(window).scrollTop());
-	      	
+
 	      	if (stop > mainbottom) {
 	          	$('#navbar').addClass('past-main');
-	      	} 
+	      	}
 	      	else {
 	          	$('#navbar').removeClass('past-main');
 	      	}
-	}); 
+	});
 
 };
 
@@ -580,7 +580,7 @@ function smoothScroll() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      	var target = $(this.hash);
 	      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      	
+
 	      	if (target.length) {
 	        	$('html, body').animate({
 	          		scrollTop: target.offset().top
