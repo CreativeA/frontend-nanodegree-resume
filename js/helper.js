@@ -63,6 +63,17 @@ var googleMap = '<div id="map"></div>';
 
 var HTMLfooter = '<a href="%url%" target="blank"><img src="%image%"></a><p class="white-text">Designed by %data% | Developed with Udacity</p>';
 
+//Navigation Menu
+
+var navStart = '<nav><ul class="flex-box"></ul></nav>';
+var biopicNav  = '<li id="navicon"><img src="images/anna-udacity-icon.jpg"></li>';
+var bioNav = '<li><a href="#topContacts">Say Hello</a></li>';
+var workNav = '<li><a href="#workExperience">Experience</a></li>';
+var inspirationNav = '<li><a href="#quotes">Inspiration</a></li>';
+var projectsNav = '<li><a href="#projects">Projects</a></li>';
+var languagesNav = '<li><a href="#languages">Languages</a></li>';
+var educationNav = '<li><a href="#education">Education</a></li>';
+var mapNav = '<li><a href="#mapDiv">Find Me</a></li>';
 
 /* Internationize Button */
 
