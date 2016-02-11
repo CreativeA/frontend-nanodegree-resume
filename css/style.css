@@ -119,10 +119,10 @@ img {
 /* Grid Layout */
 
 .grid {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .clear-fix {
@@ -130,13 +130,15 @@ img {
 }
 
 .flex-box {
-  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
-  -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+  /* Browser Compatibility */
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap; 
+  -webkit-justify-content: space-around;
 }
 
 .center-content {
@@ -663,7 +665,8 @@ footer p {
   }
 
   #skillbox {
-    height: 100%;
+    height: 400px;
+    /* Not working in Chrome height: 100%; */
     width: 90%;
     float: right;
   }
@@ -876,7 +879,8 @@ footer p {
   }
 
   #skillbox {
-    height: 100%;
+    height: 400px;
+    /* Not working in Chrome height: 100%; */
   }
 
 }
