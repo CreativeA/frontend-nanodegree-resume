@@ -22,11 +22,11 @@ var bio = {
 		]
 ,
 	"skills": 
-		[
-			"Ignoring a world of pouting selfies", 
+		[ 
 			"Navigating a floor full of Lego", 
-			"OpenSource loving (oo err)",
-			"Aspiring WordPress aficionado", 
+			"OpenSource dev & design",
+			"Outside-the-box thinking", 
+			"Ignoring a world of pouting selfies",
 			"Deep-space OpenCart exploration"
 		]
 ,
