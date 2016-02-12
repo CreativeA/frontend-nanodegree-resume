@@ -344,7 +344,7 @@ header .right h5 {
 }
 
 #skills li:nth-child(1)::after { content: url('../images/chilli-pepper.png'); }
-#skills li:nth-child(5)::after { content: url('../images/sunglasses.png'); }
+#skills li:last-of-type::after { content: url('../images/sunglasses.png'); }
 
 /* Navigation */
 
